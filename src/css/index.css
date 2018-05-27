@@ -229,6 +229,11 @@ header a {
   text-align: right;
 }
 
+/* section-session */
+.section-session .div-list-wrapper {
+  margin-top: 50px;
+}
+
 /* section-coc */
 
 .div-coc-desc {
@@ -358,6 +363,11 @@ footer .copyright {
 
   .section-schedule .div-list-wrapper p:nth-child(2) {
     text-align: right;
+  }
+
+  /* section-session */
+  .section-session .div-list-wrapper {
+    margin-top: 200px;
   }
 
   /* section-coc */

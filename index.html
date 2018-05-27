@@ -1,177 +1,407 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <title>2018 DjangoConf</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" href="./src/css/index.css">
-  </head>
-  <body>
-    <header class="flex">
-      <div class="col-m-6 col-p-6">
-        <span>DjangoConf Korea</span>
+  <title>2018 DjangoConf</title>
+
+  <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/session.css">
+</head>
+
+<body>
+  <header class="flex">
+    <div class="col-m-6 col-p-6">
+      <span>DjangoConf Korea</span>
+    </div>
+    <nav class="hidden-m col-m-6 col-p-6">
+      <ul class="flex flex-jc-end">
+        <li>
+          <a href="#section-cover">소개</a>
+        </li>
+        <li>
+          <a href="#section-schedule">스케쥴</a>
+        </li>
+        <li>
+          <a href="#section-session">세션</a>
+        </li>
+        <li>
+          <a href="#section-address">장소</a>
+        </li>
+        <li>
+          <a href="#section-cs">문의</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contents">
+    <section class="flex flex-wrap flex-jc-center flex-ai-center section-cover" id="section-cover">
+      <div class="col-m-8 col-p-8 hero">
+        <h1>DjangoCon Korea</h1>
+        <h3>startproject</h3>
+        <p class="flex flex-wrap flex-jc-center p-info">
+          <span class="flex col-m-12 col-p-6">
+            <strong class="col-m-4 col-p-2">날짜</strong>
+            <label>2018.10.14(일)</label>
+          </span>
+          <span class="flex col-m-12 col-p-6">
+            <strong class="col-m-4 col-p-2">장소</strong>
+            <label>위워크 종로타워점</label>
+          </span>
+        </p>
+        <p class="p-desc">Django 커뮤니티의 멤버들이 모여,
+          <strong>startproject</strong> 주제로 한국에서의 첫 Django 컨퍼런스를 개최합니다.
+          <br /> 이번 행사를 통해 우리나라에서 Django가 더 널리, 더 잘 사용되기를 기대합니다.</p>
       </div>
-      <nav class="hidden-m col-m-6 col-p-6">
-        <ul class="flex flex-jc-end">
-          <li><a href="#section-cover">소개</a></li>
-          <li><a href="#section-schedule">스케쥴</a></li>
-          <li><a href="#section-session">세션</a></li>
-          <li><a href="#section-address">장소</a></li>
-          <li><a href="#section-cs">문의</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
 
-    <section class="contents">
-      <section class="flex flex-wrap flex-jc-center flex-ai-center section-cover" id="section-cover">
-        <div class="col-m-8 col-p-8 hero">
-          <h1>DjangoCon Korea</h1>
-          <h3>startproject</h3>
-          <p class="flex flex-wrap flex-jc-center p-info">
-            <span class="flex col-m-12 col-p-6">
-              <strong class="col-m-4 col-p-2">날짜</strong>
-              <label>2018.10.14(일)</label>
-            </span>
-            <span class="flex col-m-12 col-p-6">
-              <strong class="col-m-4 col-p-2">장소</strong>
-              <label>위워크 종로타워점</label>
-            </span>
-          </p>
-          <p class="p-desc">Django 커뮤니티의 멤버들이 모여, <strong>startproject</strong> 주제로 한국에서의 첫 Django 컨퍼런스를 개최합니다.<br />
-            이번 행사를 통해 우리나라에서 Django가 더 널리, 더 잘 사용되기를 기대합니다.</p>
-        </div>
-      </section>
-
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule" id="section-schedule">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">스케쥴</h2>
-          <div class="flex flex-wrap">
-            <div class="flex col-m-12 col-p-12 div-list-wrapper">
-              <p class="col-m-4 col-p-4">스피커 모집</p>
-              <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap">
-            <div class="flex col-m-12 col-p-12 div-list-wrapper">
-              <p class="col-m-4 col-p-4">발표 세션 공지</p>
-              <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
-            </div>
-          </div>
-          <div class="flex flex-wrap">
-            <div class="flex col-m-12 col-p-12 div-list-wrapper">
-              <p class="col-m-4 col-p-4">티켓</p>
-              <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
-            </div>
-          </div>
-          <div class="flex flex-jc-center div-list-wrapper">
-            <a class="btn-primary">스피커 신청</a>
+    <section class="container flex-wrap flex-jc-center section-margin-top section-schedule" id="section-schedule">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">스케쥴</h2>
+        <div class="flex flex-wrap">
+          <div class="flex col-m-12 col-p-12 div-list-wrapper">
+            <p class="col-m-4 col-p-4">스피커 모집</p>
+            <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
           </div>
         </div>
-      </section>
-
-      <section class="container flex-wrap flex-jc-center section-margin-top section-session" id="section-session">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">세션</h2>
-          <div class="flex flex-jc-center div-list-wrapper">
-            <a href="./session.html" class="btn-primary">더보기</a>
+        <div class="flex flex-wrap">
+          <div class="flex col-m-12 col-p-12 div-list-wrapper">
+            <p class="col-m-4 col-p-4">발표 세션 공지</p>
+            <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
           </div>
         </div>
-      </section>
+        <div class="flex flex-wrap">
+          <div class="flex col-m-12 col-p-12 div-list-wrapper">
+            <p class="col-m-4 col-p-4">티켓</p>
+            <p class="col-m-8 col-p-8">2018.9.20(목) 까지</p>
+          </div>
+        </div>
+        <div class="flex flex-jc-center div-list-wrapper">
+          <a class="btn-primary">스피커 신청</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-address" id="section-address">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">장소</h2>
-          <div>
-            <div class="flex flex-wrap">
-              <div class="flex col-m-12 col-p-12 div-list-wrapper">
-                <p class="col-m-4 col-p-4">장소</p>
-                <p class="col-m-8 col-p-8">서울 종로구 종로 51 종로타워</p>
+    <section class="container flex-wrap flex-jc-center section-margin-top section-session" id="section-session">
+      <div class="col-m-10 col-p-10">
+        <h2 class="title">세션</h2>
+
+        <section class="hidden-m container">
+          <div class="session-table flex col-m-12 col-p-12">
+            <div class="session-divider flex col-m-12 col-p-6">
+              <div class="session-time col-p-2">
+                10:00
+              </div>
+              <div class="session-rail col-m-12 col-p-10">
+                <div class="session-place">위치 1</div>
+
+                <div class="session-card col-m-12">
+                  <div class="session-card-title">발표 타이틀</div>
+                  <div class="session-card-speaker">
+                    <a href="#">발표자</a>
+                  </div>
+                  <div class="flex">
+                    <div class="flex col-m-6 col-p-6">
+                      <div class="col-m-5 col-p-5 session-card-gradebox">초급</div>
+                      <div class="col-m-1 col-p-1"></div>
+                      <div class="col-m-5 col-p-5 session-card-type">발표</div>
+                    </div>
+                    <div class="flex flex-ai-center col-m-6 col-p-6 session-card-time-wrapper">
+                      <div class="col-m-2 col-p-2"></div>
+                      <img src="./src/img/time.png" srcset="./src/img/time@2x.png 2x, ./src/img/time@3x.png 3x" class="col-m-2 col-p-2 time-icon">
+                      <div class="col-m-8 col-p-8 session-card-time">
+                        AM 10:20~
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="session-card col-m-12">
+                  <div class="session-card-title">발표 타이틀</div>
+                  <div class="session-card-speaker">
+                    <a href="#">발표자</a>
+                  </div>
+                  <div class="flex">
+                    <div class="flex col-m-6 col-p-6">
+                      <div class="col-m-5 col-p-5 session-card-gradebox">초급</div>
+                      <div class="col-m-1 col-p-1"></div>
+                      <div class="col-m-5 col-p-5 session-card-type">발표</div>
+                    </div>
+                    <div class="flex flex-ai-center col-m-6 col-p-6 session-card-time-wrapper">
+                      <div class="col-m-2 col-p-2"></div>
+                      <img src="./src/img/time.png" srcset="./src/img/time@2x.png 2x, ./src/img/time@3x.png 3x" class="col-m-2 col-p-2 time-icon">
+                      <div class="col-m-8 col-p-8 session-card-time">
+                        AM 10:20~
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-m-12 col-p-12 flex flex-ai-center flex-jc-center session-card meal">
+                  <img src="./src/img/meal.png" srcset="./src/img/meal@2x.png 2x,
+                                  ./src/img/meal@3x.png 3x" class="meal-icon">
+                </div>
+              </div>
+            </div>
+
+            <div class="session-divider flex col-m-12 col-p-6">
+              <div class="session-time col-p-2"></div>
+              <div class="session-rail col-m-12 col-p-10">
+                <div class="session-place">위치 2</div>
+
+                <div class="session-card col-m-12">
+                  <div class="session-card-title">발표 타이틀</div>
+                  <div class="session-card-speaker">
+                    <a href="#">발표자</a>
+                  </div>
+                  <div class="flex">
+                    <div class="flex col-m-6 col-p-6">
+                      <div class="col-m-5 col-p-5 session-card-gradebox">초급</div>
+                      <div class="col-m-1 col-p-1"></div>
+                      <div class="col-m-5 col-p-5 session-card-type">발표</div>
+                    </div>
+                    <div class="flex flex-ai-center col-m-6 col-p-6 session-card-time-wrapper">
+                      <div class="col-m-2 col-p-2"></div>
+                      <img src="./src/img/time.png" srcset="./src/img/time@2x.png 2x, ./src/img/time@3x.png 3x" class="col-m-2 col-p-2 time-icon">
+                      <div class="col-m-8 col-p-8 session-card-time">
+                        AM 10:20~
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="session-card col-m-12">
+                  <div class="session-card-title">발표 타이틀</div>
+                  <div class="session-card-speaker">
+                    <a href="#">발표자</a>
+                  </div>
+                  <div class="flex">
+                    <div class="flex col-m-6 col-p-6">
+                      <div class="col-m-5 col-p-5 session-card-gradebox">초급</div>
+                      <div class="col-m-1 col-p-1"></div>
+                      <div class="col-m-5 col-p-5 session-card-type">발표</div>
+                    </div>
+                    <div class="flex flex-ai-center col-m-6 col-p-6 session-card-time-wrapper">
+                      <div class="col-m-2 col-p-2"></div>
+                      <img src="./src/img/time.png" srcset="./src/img/time@2x.png 2x, ./src/img/time@3x.png 3x" class="col-m-2 col-p-2 time-icon">
+                      <div class="col-m-8 col-p-8 session-card-time">
+                        AM 10:20~
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-m-12 col-p-12 flex flex-ai-center flex-jc-center session-card meal">
+                  <img src="./src/img/meal.png" srcset="./src/img/meal@2x.png 2x,
+                                  ./src/img/meal@3x.png 3x" class="meal-icon">
+                </div>
+
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-m-10 col-p-10">
-          <div id="map" style="width:100%; height:500px;"></div>
-        </div>
-      </section>
+        </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-design" id="section-design">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">장고콘 디자인 가이드</h2>
-          <div class="flex flex-jc-center div-list-wrapper">
-            <a class="btn-primary">더보기</a>
-          </div>
-        </div>
-      </section>
+        <section class="visible-m container">
+          <div class="col-m-12 col-p-12">
+            <div class="session-place mobile flex flex-jc-center">위치 1</div>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-sponsor" id="section-sponsor">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">스폰서</h2>
-        </div>
-      </section>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card long-margin">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-coc" id="section-coc">
-        <div class="col-m-10 col-p-12">
-          <h2 class="title">CoC</h2>
-          <div class="div-coc-desc">
-              2018 DjangoCon(f) Korea(이하 본 행사)에 참석하는 모든 형태의 참가자는 행동 강령을 따라야 합니다. 여기서 모든 참가자라 함은 일반 참가자, 발표자, 후원사, 행사 운영진 그리고 자원봉사자 등 모두를 포함합니다.
-              이 행동 강령은 본 행사의 준비 과정, 진행 과정 그리고 행사 후에 이루어지는 참가자 간의 교류 활동까지 항상 적용됩니다.
-          </div>
-          <div class="flex flex-jc-center div-list-wrapper">
-            <a href="https://github.com/djangokr/CodeOfConduct/blob/master/Korean/2018_DjangoCon_Korea_CoC.md" class="btn-primary">더보기</a>
-          </div>
-        </div>
-      </section>
+            <div class="session-place mobile flex flex-jc-center">위치 2</div>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-organizer" id="section-organizer">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">오거나이저</h2>
-        </div>
-      </section>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card long-margin">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top" id="section-cs">
-        <div class="col-m-10 col-p-6">
-          <h2 class="title">문의</h2>
-          <div class="flex flex-wrap">
-            <div class="flex col-m-12 col-p-12 div-list-wrapper">
-              <p class="col-m-4 col-p-4">이메일</p>
-              <a href="mailto:help@djangocon.co.kr" class="col-m-8 col-p-8">help@djangocon.co.kr</a>
+            <div class="session-place mobile flex flex-jc-center">위치 3</div>
+
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
+            </div>
+            <div class="flex flex-jc-center flex-wrap m-session-card">
+              <div class="col-m-8 m-session-card-title">발표 타이틀은 무엇일까요?</div>
+              <div class="flex col-m-8">
+                <div class="col-m-6 m-session-card-txt">발표자</div>
+                <div class="col-m-6 m-session-card-txt">AM 10:00~</div>
+              </div>
             </div>
           </div>
-          <div class="flex flex-wrap">
-            <div class="flex col-m-12 col-p-12 div-list-wrapper">
-              <p class="col-m-4 col-p-4">페이스북</p>
-              <a href="https://www.facebook.com/djangoconkorea/" class="col-m-8 col-p-8">facebook.com/djangoconkorea/</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
+        <div class="flex flex-jc-center div-list-wrapper">
+          <a href="./session.html" class="btn-primary">더보기</a>
+        </div>
+      </div>
     </section>
 
-    <footer class="flex flex-wrap flex-jc-center flex-ai-center">
-      <div class="col-m-10 col-p-12">
-        <p><strong>Djangocon Korea 2018</strong></p>
-        <p>Djangocon Korea 2018 is a product of Djangocon Korea Organizing Team</p>
-        <p class="copyright">designed by leeheejin, created by kimwoohyun, kangmyungseo</p>
+    <section class="container flex-wrap flex-jc-center section-margin-top section-address" id="section-address">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">장소</h2>
+        <div>
+          <div class="flex flex-wrap">
+            <div class="flex col-m-12 col-p-12 div-list-wrapper">
+              <p class="col-m-4 col-p-4">장소</p>
+              <p class="col-m-8 col-p-8">서울 종로구 종로 51 종로타워</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="col-m-10 col-p-10">
+        <div id="map" style="width:100%; height:500px;"></div>
+      </div>
+    </section>
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8d02220ab5fda4a3c2910c764f9ae8b"></script>
-    <script>
-      const container = document.getElementById('map');
-      const position = new daum.maps.LatLng(37.57079, 126.98356);
-      const options = {
-        center: position,
-        level: 3
-      };
-      const map = new daum.maps.Map(container, options);
-      const marker = new daum.maps.Marker({
-          position: position
-      });
-      marker.setMap(map);
-    </script>
-  </body>
+    <section class="container flex-wrap flex-jc-center section-margin-top section-design" id="section-design">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">장고콘 디자인 가이드</h2>
+        <div class="flex flex-jc-center div-list-wrapper">
+          <a class="btn-primary">더보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex-wrap flex-jc-center section-margin-top section-sponsor" id="section-sponsor">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">스폰서</h2>
+      </div>
+    </section>
+
+    <section class="container flex-wrap flex-jc-center section-margin-top section-coc" id="section-coc">
+      <div class="col-m-10 col-p-12">
+        <h2 class="title">CoC</h2>
+        <div class="div-coc-desc">
+          2018 DjangoCon(f) Korea(이하 본 행사)에 참석하는 모든 형태의 참가자는 행동 강령을 따라야 합니다. 여기서 모든 참가자라 함은 일반 참가자, 발표자, 후원사, 행사 운영진 그리고 자원봉사자 등 모두를
+          포함합니다. 이 행동 강령은 본 행사의 준비 과정, 진행 과정 그리고 행사 후에 이루어지는 참가자 간의 교류 활동까지 항상 적용됩니다.
+        </div>
+        <div class="flex flex-jc-center div-list-wrapper">
+          <a href="https://github.com/djangokr/CodeOfConduct/blob/master/Korean/2018_DjangoCon_Korea_CoC.md" class="btn-primary">더보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container flex-wrap flex-jc-center section-margin-top section-organizer" id="section-organizer">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">오거나이저</h2>
+      </div>
+    </section>
+
+    <section class="container flex-wrap flex-jc-center section-margin-top" id="section-cs">
+      <div class="col-m-10 col-p-6">
+        <h2 class="title">문의</h2>
+        <div class="flex flex-wrap">
+          <div class="flex col-m-12 col-p-12 div-list-wrapper">
+            <p class="col-m-4 col-p-4">이메일</p>
+            <a href="mailto:help@djangocon.co.kr" class="col-m-8 col-p-8">help@djangocon.co.kr</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="flex col-m-12 col-p-12 div-list-wrapper">
+            <p class="col-m-4 col-p-4">페이스북</p>
+            <a href="https://www.facebook.com/djangoconkorea/" class="col-m-8 col-p-8">facebook.com/djangoconkorea/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <footer class="flex flex-wrap flex-jc-center flex-ai-center">
+    <div class="col-m-10 col-p-12">
+      <p>
+        <strong>Djangocon Korea 2018</strong>
+      </p>
+      <p>Djangocon Korea 2018 is a product of Djangocon Korea Organizing Team</p>
+      <p class="copyright">designed by leeheejin, created by kimwoohyun, kangmyungseo</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e8d02220ab5fda4a3c2910c764f9ae8b"></script>
+  <script>
+    const container = document.getElementById('map');
+    const position = new daum.maps.LatLng(37.57079, 126.98356);
+    const options = {
+      center: position,
+      level: 3
+    };
+    const map = new daum.maps.Map(container, options);
+    const marker = new daum.maps.Marker({
+      position: position
+    });
+    marker.setMap(map);
+  </script>
+</body>
+
 </html>
