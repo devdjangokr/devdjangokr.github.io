@@ -6,6 +6,13 @@
   color: #314351;
 }
 
+.page-title.mobile {
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  color: #0d2e21;
+  margin-bottom: 45px;
+}
+
 .session-table {
   margin-top: 100px;
 }
@@ -43,6 +50,15 @@
   color: #1f9c6d;
   box-sizing: border-box;
   padding: 35px 0 30px 35px;
+}
+
+.session-place.mobile {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: -0.3px;
+  color: #1f9c6d;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .session-card {
@@ -118,4 +134,24 @@
 }
 .session-card-time-wrapper .session-card-time {
   line-height: 36px;
+}
+
+.m-session-card {
+  margin-bottom: 30px;
+}
+.m-session-card.long-margin {
+  margin-bottom: 55px;
+}
+.m-session-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #0d2e21;
+  margin-bottom: 10px;
+}
+
+.m-session-card-txt {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  color: #0d2e21;
 }
