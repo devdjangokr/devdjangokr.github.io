@@ -6,40 +6,46 @@
 
     <title>2018 DjangoConf</title>
 
-    <link rel="stylesheet" type="text/css" href="/src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css">
   </head>
   <body>
     <header class="flex">
       <div class="col-m-6 col-p-6">
         <span>DjangoConf Korea</span>
       </div>
-      <nav class="col-m-6 col-p-6">
+      <nav class="hidden-m col-m-6 col-p-6">
         <ul class="flex flex-jc-end">
-          <li><a>소개</a></li>
-          <li><a>스케쥴</a></li>
-          <li><a>세션</a></li>
-          <li><a>장소</a></li>
-          <li><a>문의</a></li>
+          <li><a href="#section-cover">소개</a></li>
+          <li><a href="#section-schedule">스케쥴</a></li>
+          <li><a href="#section-session">세션</a></li>
+          <li><a href="#section-address">장소</a></li>
+          <li><a href="#section-cs">문의</a></li>
         </ul>
       </nav>
     </header>
 
     <section class="contents">
-      <section class="flex flex-wrap flex-jc-center flex-ai-center section-cover">
-        <div class="hero">
+      <section class="flex flex-wrap flex-jc-center flex-ai-center section-cover" id="section-cover">
+        <div class="col-m-8 col-p-8 hero">
           <h1>DjangoCon Korea</h1>
           <h3>startproject</h3>
-          <p class="p-info">
-            <span><strong>날짜</strong> 2018.10.14(일)</span>
-            <span><strong>장소</strong> 위워크 종로타워점</span>
+          <p class="flex flex-wrap flex-jc-center p-info">
+            <span class="flex col-m-12 col-p-6">
+              <strong class="col-m-4 col-p-2">날짜</strong>
+              <label>2018.10.14(일)</label>
+            </span>
+            <span class="flex col-m-12 col-p-6">
+              <strong class="col-m-4 col-p-2">장소</strong>
+              <label>위워크 종로타워점</label>
+            </span>
           </p>
           <p class="p-desc">Django 커뮤니티의 멤버들이 모여, <strong>startproject</strong> 주제로 한국에서의 첫 Django 컨퍼런스를 개최합니다.<br />
-            이번 행사를 통해 우리나라에서 Django가 더 널리, 더 잘 사용되기를 기대합니다</p>
+            이번 행사를 통해 우리나라에서 Django가 더 널리, 더 잘 사용되기를 기대합니다.</p>
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule" id="section-schedule">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">스케쥴</h2>
           <div class="flex flex-wrap">
             <div class="flex col-m-12 col-p-12 div-list-wrapper">
@@ -65,14 +71,17 @@
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-session" id="section-session">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">세션</h2>
+          <div class="flex flex-jc-center div-list-wrapper">
+            <a href="./session.html" class="btn-primary">더보기</a>
+          </div>
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-address" id="section-address">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">장소</h2>
           <div>
             <div class="flex flex-wrap">
@@ -83,13 +92,13 @@
             </div>
           </div>
         </div>
-        <div class="col-m-12 col-p-10">
+        <div class="col-m-10 col-p-10">
           <div id="map" style="width:100%; height:500px;"></div>
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-design" id="section-design">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">장고콘 디자인 가이드</h2>
           <div class="flex flex-jc-center div-list-wrapper">
             <a class="btn-primary">더보기</a>
@@ -97,14 +106,14 @@
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-sponsor" id="section-sponsor">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">스폰서</h2>
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-coc">
-        <div class="col-m-12 col-p-12">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-coc" id="section-coc">
+        <div class="col-m-10 col-p-12">
           <h2 class="title">CoC</h2>
           <div class="div-coc-desc">
               2018 DjangoCon(f) Korea(이하 본 행사)에 참석하는 모든 형태의 참가자는 행동 강령을 따라야 합니다. 여기서 모든 참가자라 함은 일반 참가자, 발표자, 후원사, 행사 운영진 그리고 자원봉사자 등 모두를 포함합니다.
@@ -116,14 +125,14 @@
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top section-schedule">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top section-organizer" id="section-organizer">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">오거나이저</h2>
         </div>
       </section>
 
-      <section class="container flex-wrap flex-jc-center section-margin-top">
-        <div class="col-m-12 col-p-6">
+      <section class="container flex-wrap flex-jc-center section-margin-top" id="section-cs">
+        <div class="col-m-10 col-p-6">
           <h2 class="title">문의</h2>
           <div class="flex flex-wrap">
             <div class="flex col-m-12 col-p-12 div-list-wrapper">
@@ -143,7 +152,7 @@
     </section>
 
     <footer class="flex flex-wrap flex-jc-center flex-ai-center">
-      <div>
+      <div class="col-m-10 col-p-12">
         <p><strong>Djangocon Korea 2018</strong></p>
         <p>Djangocon Korea 2018 is a product of Djangocon Korea Organizing Team</p>
         <p class="copyright">designed by leeheejin, created by kimwoohyun, kangmyungseo</p>
