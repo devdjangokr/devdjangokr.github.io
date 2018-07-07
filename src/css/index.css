@@ -44,9 +44,14 @@ table {
 }
 
 /* custom grid */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: NotoSansCJKkr;
+  src: url(../font/NotoSansCJKkr-Bold.otf);
+  src: url(../font/NotoSansCJKkr-Light.otf);
+  src: url(../font/NotoSansCJKkr-Regular.otf);
+}
 
-* { box-sizing: border-box; font-family: 'Noto Sans KR' }
+* { box-sizing: border-box; font-family: NotoSansCJKkr; }
 
 .container {
   display: flex;
@@ -140,6 +145,7 @@ h3 { font-size: 18px; }
 
 .div-list-wrapper {
   margin-bottom: 24px;
+  word-wrap: break-word;
 }
 
 .div-list-wrapper p:nth-child(1) {
@@ -157,12 +163,14 @@ h3 { font-size: 18px; }
   letter-spacing: -0.2px;
   text-align: left;
   color: #0d2e21;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 /* header */
 
 header {
+  position: absolute;
+  width: 100%;
   background-color: #134d45;
   color: #ffffff;
   padding: 20px 30px;
@@ -182,11 +190,15 @@ header a {
 
 .section-cover {
   height: 500px;
-  background-color: #134d45;
+  background-image: url('../img/cover.png');
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
 .hero {
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -269,14 +281,14 @@ footer .copyright {
   h3 { font-size: 32px; }
 
   .title {
-    height: 59px;
-    margin-bottom: 109px;
-    font-size: 40px;
+    height: 47px;
+    margin-bottom: 120px;
+    font-size: 32px;
   }
 
   .btn-primary {
     padding: 16px 20px;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
@@ -285,18 +297,18 @@ footer .copyright {
   }
 
   .div-list-wrapper {
-    margin-bottom: 44px;
+    margin-bottom: 36px;
   }
 
   .div-list-wrapper p:nth-child(1) {
-    height: 47px;
-    font-size: 32px;
+    height: 36px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
   .div-list-wrapper p:nth-child(2), .div-list-wrapper a:nth-child(2) {
-    height: 47px;
-    font-size: 32px;
+    height: 36px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
@@ -316,12 +328,11 @@ footer .copyright {
   /* section-cover */
 
   .section-cover {
-    height: 800px;
-    background-color: #134d45;
-    color: #ffffff;
+    height: 1000px;
   }
 
   .hero {
+    margin-bottom: 200px;
     text-align: center;
   }
 
@@ -373,9 +384,9 @@ footer .copyright {
   /* section-coc */
 
   .div-coc-desc {
-    margin-bottom: 104px;
-    font-size: 32px;
-    letter-spacing: -0.4px;
+    margin-bottom: 52px;
+    font-size: 24px;
+    letter-spacing: -0.3px;
   }
 
   /* footer */
