@@ -256,6 +256,73 @@ header a {
   color: #0d2e21;
 }
 
+/* section-og */
+.figure-organizer {
+  text-align: center;
+}
+
+.figure-organizer .p-name {
+  margin: 24px 0px 8px 0px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: #0d2e21;
+}
+
+.figure-organizer .p-contents {
+  height: 24px;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #0d2e21;
+}
+
+.owl-stage {
+  margin: 0 auto;
+}
+
+.owl-item {
+  padding: 15px;
+}
+
+.owl-carousel .owl-item img {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0px !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 0px;
+  margin-left: -5px !important;
+}
+
+.owl-next {
+  position: absolute;
+  right: 0;
+  margin-right: -5px !important;
+}
+
+.owl-prev:hover , .owl-next:hover, .owl-prev:focus , .owl-next:focus {
+  background: none !important;
+  outline: none;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 42px;
+  color: #134d45; 
+}
+
 /* footer */
 
 footer {
@@ -387,6 +454,29 @@ footer .copyright {
     margin-bottom: 52px;
     font-size: 24px;
     letter-spacing: -0.3px;
+  }
+
+  /* section-og */
+  .figure-organizer .p-name {
+    margin: 36px 0px 8px 0px;
+    height: 47px;
+    font-size: 32px;
+  }
+
+  .figure-organizer .p-contents {
+    height: 47px;
+    font-size: 32px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+  }
+
+  .owl-prev span, .owl-next span {
+    font-size: 42px;
+    color: #134d45; 
   }
 
   /* footer */

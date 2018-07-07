@@ -7,8 +7,14 @@
 
   <title>Dev Django Korea 2018</title>
 
+  <link rel="stylesheet" href="src/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="src/owlcarousel/owl.theme.default.min.css">
+
   <link rel="stylesheet" type="text/css" href="./src/css/index.css">
   <link rel="stylesheet" type="text/css" href="./src/css/session.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="src/owlcarousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -353,8 +359,115 @@
     </section>
 
     <section class="container flex-wrap flex-jc-center section-margin-top section-organizer" id="section-organizer">
-      <div class="col-m-10 col-p-6">
+      <div class="col-m-10 col-p-10">
         <h2 class="title">준비위원회</h2>
+        <div class="flex flex-wrap">
+          <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">강명서</p>
+                        <p class="p-contents">위원장</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">김승호</p>
+                        <p class="p-contents">부위원장</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">김우현</p>
+                        <p class="p-contents">일꾼</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">김수정</p>
+                        <p class="p-contents">만능인</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">이희진</p>
+                        <p class="p-contents">디자이너</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">박채현</p>
+                        <p class="p-contents">디자이너</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">윤건영</p>
+                        <p class="p-contents">만능인</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">박주한</p>
+                        <p class="p-contents">만능인</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="owl-item">
+                  <figure class="figure-organizer">
+                    <img src="/src/img/profile.png" class="img-responsive"/>
+                    <figcaption class="flex flex-ai-center flex-wrap">
+                      <div class="col-m-12 col-p-12">
+                        <p class="p-name">서종화</p>
+                        <p class="p-contents">만능인</p>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -402,6 +515,25 @@
     });
     marker.setMap(map);
   </script> -->
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        responsiveClass:true,
+        dots: false,
+        nav:true,
+        responsive:{
+          0:{
+            items:2,
+            slideBy: 2
+          },
+          700: {
+            items:4,
+            slideBy: 4
+          }
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
