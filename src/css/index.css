@@ -44,9 +44,14 @@ table {
 }
 
 /* custom grid */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: NotoSansCJKkr;
+  src: url(../font/NotoSansCJKkr-Bold.otf);
+  src: url(../font/NotoSansCJKkr-Light.otf);
+  src: url(../font/NotoSansCJKkr-Regular.otf);
+}
 
-* { box-sizing: border-box; font-family: 'Noto Sans KR' }
+* { box-sizing: border-box; font-family: NotoSansCJKkr; }
 
 .container {
   display: flex;
@@ -140,6 +145,7 @@ h3 { font-size: 18px; }
 
 .div-list-wrapper {
   margin-bottom: 24px;
+  word-wrap: break-word;
 }
 
 .div-list-wrapper p:nth-child(1) {
@@ -163,6 +169,8 @@ h3 { font-size: 18px; }
 /* header */
 
 header {
+  position: absolute;
+  width: 100%;
   background-color: #134d45;
   color: #ffffff;
   padding: 20px 30px;
@@ -182,11 +190,15 @@ header a {
 
 .section-cover {
   height: 500px;
-  background-color: #134d45;
+  background-image: url('../img/cover.png');
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
 .hero {
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -244,6 +256,73 @@ header a {
   color: #0d2e21;
 }
 
+/* section-og */
+.figure-organizer {
+  text-align: center;
+}
+
+.figure-organizer .p-name {
+  margin: 24px 0px 8px 0px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: #0d2e21;
+}
+
+.figure-organizer .p-contents {
+  height: 24px;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #0d2e21;
+}
+
+.owl-stage {
+  margin: 0 auto;
+}
+
+.owl-item {
+  padding: 15px;
+}
+
+.owl-carousel .owl-item img {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0px !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.owl-prev {
+  position: absolute;
+  left: 0px;
+  margin-left: -5px !important;
+}
+
+.owl-next {
+  position: absolute;
+  right: 0;
+  margin-right: -5px !important;
+}
+
+.owl-prev:hover , .owl-next:hover, .owl-prev:focus , .owl-next:focus {
+  background: none !important;
+  outline: none;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 42px;
+  color: #134d45; 
+}
+
 /* footer */
 
 footer {
@@ -269,14 +348,14 @@ footer .copyright {
   h3 { font-size: 32px; }
 
   .title {
-    height: 59px;
-    margin-bottom: 109px;
-    font-size: 40px;
+    height: 47px;
+    margin-bottom: 120px;
+    font-size: 32px;
   }
 
   .btn-primary {
     padding: 16px 20px;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
@@ -285,18 +364,18 @@ footer .copyright {
   }
 
   .div-list-wrapper {
-    margin-bottom: 44px;
+    margin-bottom: 36px;
   }
 
   .div-list-wrapper p:nth-child(1) {
-    height: 47px;
-    font-size: 32px;
+    height: 36px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
   .div-list-wrapper p:nth-child(2), .div-list-wrapper a:nth-child(2) {
-    height: 47px;
-    font-size: 32px;
+    height: 36px;
+    font-size: 24px;
     letter-spacing: -0.4px;
   }
 
@@ -316,12 +395,11 @@ footer .copyright {
   /* section-cover */
 
   .section-cover {
-    height: 800px;
-    background-color: #134d45;
-    color: #ffffff;
+    height: 1000px;
   }
 
   .hero {
+    margin-bottom: 200px;
     text-align: center;
   }
 
@@ -373,9 +451,32 @@ footer .copyright {
   /* section-coc */
 
   .div-coc-desc {
-    margin-bottom: 104px;
+    margin-bottom: 52px;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+  }
+
+  /* section-og */
+  .figure-organizer .p-name {
+    margin: 36px 0px 8px 0px;
+    height: 47px;
     font-size: 32px;
-    letter-spacing: -0.4px;
+  }
+
+  .figure-organizer .p-contents {
+    height: 47px;
+    font-size: 32px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+  }
+
+  .owl-prev span, .owl-next span {
+    font-size: 42px;
+    color: #134d45; 
   }
 
   /* footer */
