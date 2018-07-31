@@ -233,6 +233,7 @@ header a {
   font-size: 14px;
   letter-spacing: -0.1px;
   text-align: left;
+  word-break: keep-all;
 }
 
 /* section-schedule */
