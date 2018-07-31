@@ -1,5 +1,5 @@
 /* reset css */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -261,6 +261,10 @@ header a {
   text-align: center;
 }
 
+.figure-organizer img {
+  border-radius: 50%;
+}
+
 .figure-organizer .p-name {
   margin: 24px 0px 8px 0px;
   height: 24px;
@@ -320,7 +324,7 @@ header a {
 
 .owl-prev span, .owl-next span {
   font-size: 42px;
-  color: #134d45; 
+  color: #134d45;
 }
 
 /* footer */
@@ -468,6 +472,11 @@ footer .copyright {
     font-size: 32px;
   }
 
+  .figure-organizer .p-contents a {
+    color: #0d2e21;
+    text-decoration: none;
+  }
+
   .owl-carousel .owl-item img {
     width: 90px;
     height: 90px;
@@ -476,7 +485,7 @@ footer .copyright {
 
   .owl-prev span, .owl-next span {
     font-size: 42px;
-    color: #134d45; 
+    color: #134d45;
   }
 
   /* footer */
