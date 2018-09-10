@@ -28,6 +28,9 @@
   vertical-align: middle;
   font-size: 24px;
 }
+.session-row.bg-green {
+  background-color: #d5f3ec;
+}
 
 .arrow-img-wrapper {
   text-align: right;
@@ -36,4 +39,24 @@
 
 .arrow-img {
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .session-header {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+
+  .session-row {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+
+  .arrow-img-wrapper {
+    padding-right: 18px;
+  }
 }
