@@ -1,157 +1,39 @@
-.page-title {
+.text-center {
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: -0.5px;
-  color: #314351;
 }
 
-.page-title.mobile {
-  font-size: 20px;
-  letter-spacing: -0.3px;
-  color: #0d2e21;
-  margin-bottom: 45px;
+.timetable {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(19, 77, 69, 0);
+  border: solid 2px #d5f3ec;
 }
 
-.session-table {
-  margin-top: 100px;
-}
-
-.session-time {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
+.session-header {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #d5f3ec;
+  box-shadow: 0 4px 8px 0 rgba(19, 77, 69, 0);
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
   font-size: 28px;
-  letter-spacing: -0.4px;
-  color: #1d6449;
-}
-
-.session-divider {
-  box-sizing: border-box;
-}
-
-.session-time {
-  display: inline-block;
-  box-sizing: border-box;
-  padding-top: 110px;
-}
-
-.session-rail {
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 12px;
-  background-color: #f1fcf7;
-}
-
-.session-place {
-  font-size: 32px;
   font-weight: bold;
-  letter-spacing: -0.4px;
-  color: #1f9c6d;
-  box-sizing: border-box;
-  padding: 35px 0 30px 35px;
-}
-
-.session-place.mobile {
-  font-size: 20px;
-  font-weight: normal;
-  letter-spacing: -0.3px;
-  color: #1f9c6d;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.session-card {
-  width: 100%;
-  border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(13, 46, 33, 0.14);
-  box-sizing: border-box;
-  padding: 30px;
-}
-.session-card.meal {
-  height: 220px;
-  background-color: #bfe8d4;
-}
-
-.session-card .session-card-title {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: -0.4px;
   color: #134d45;
-  margin-bottom: 12px;
+  padding-left: 55px;
 }
 
-.session-card .session-card-speaker {
-  font-size: 28px;
-  letter-spacing: -0.4px;
-  color: #1d6449;
-  margin-bottom: 35px;
+.session-row {
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  font-size: 24px;
 }
 
-.session-card .session-card-gradebox {
-  display: inline-block;
-  box-sizing: border-box;
-  line-height: 48px;
-  text-align: center;
-  border-radius: 8px;
-  background-color: #a3f7d8;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: -0.4px;
-  color: #1f9c6d;
-}
-
-.session-card .session-card-type {
-  display: inline-block;
-  box-sizing: border-box;
-  line-height: 44px;
-  text-align: center;
-  border-radius: 8px;
-  border: solid 2px #1f9c6d;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: -0.4px;
-  color: #1f9c6d;
-}
-
-.session-card .session-card-time-wrapper {
-  box-sizing: border-box;
-  font-size: 28px;
-  letter-spacing: -0.4px;
-  color: #1d6449;
+.arrow-img-wrapper {
   text-align: right;
-}
-.session-card .session-card-time-wrapper .time-icon {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-.session-card .meal-icon {
-  width: 63px;
-  height: 59px;
-  object-fit: contain;
-}
-.session-card-time-wrapper .session-card-time {
-  line-height: 36px;
+  padding-right: 55px;
 }
 
-.m-session-card {
-  margin-bottom: 30px;
-}
-.m-session-card.long-margin {
-  margin-bottom: 55px;
-}
-.m-session-card-title {
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: -0.2px;
-  color: #0d2e21;
-  margin-bottom: 10px;
-}
-
-.m-session-card-txt {
-  font-size: 18px;
-  letter-spacing: -0.2px;
-  color: #0d2e21;
+.arrow-img {
+  cursor: pointer;
 }
