@@ -189,7 +189,7 @@ header a {
 /* section-cover */
 
 .section-cover {
-  height: 500px;
+  height: 600px;
   background-image: url('../img/cover.png');
   background-size: cover;
   background-position: 50% 100%;
@@ -228,7 +228,7 @@ header a {
 }
 
 .hero .p-desc {
-  margin-top: 32px;
+  margin-top: 72px;
   height: 130px;
   font-size: 14px;
   letter-spacing: -0.1px;
