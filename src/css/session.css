@@ -28,8 +28,14 @@
   word-break: keep-all;
   font-size: 24px;
 }
+.session-row.bg-table {
+  background-color: #fafdfd;
+}
 .session-row.bg-green {
   background-color: #d5f3ec;
+}
+.session-row.padding-bottom {
+  padding-bottom: 30px;
 }
 
 .arrow-img-wrapper {
