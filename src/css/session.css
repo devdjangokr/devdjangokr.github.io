@@ -9,8 +9,8 @@
 }
 
 .session-header {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   background-color: #d5f3ec;
   box-shadow: 0 4px 8px 0 rgba(19, 77, 69, 0);
   height: 100px;
@@ -23,9 +23,9 @@
 }
 
 .session-row {
-  height: 100px;
-  line-height: 100px;
-  vertical-align: middle;
+  padding-top: 30px;
+  min-height: 100px;
+  word-break: keep-all;
   font-size: 24px;
 }
 .session-row.bg-green {
@@ -51,10 +51,15 @@
   }
 
   .session-row {
-    height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
+    min-height: 50px;
     font-size: 16px;
+    padding-top: 15px;
+  }
+  .session-row.bg-green {
+    background-color: #d5f3ec;
+  }
+  .session-row.padding-bottom {
+    padding-bottom: 15px;
   }
 
   .arrow-img-wrapper {
