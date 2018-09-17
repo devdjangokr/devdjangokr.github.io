@@ -282,6 +282,11 @@ header a {
   color: #0d2e21;
 }
 
+.figure-organizer .p-contents a {
+  color: #0d2e21;
+  text-decoration: none;
+}
+
 .owl-stage {
   margin: 0 auto;
 }
@@ -471,11 +476,6 @@ footer .copyright {
   .figure-organizer .p-contents {
     height: 47px;
     font-size: 32px;
-  }
-
-  .figure-organizer .p-contents a {
-    color: #0d2e21;
-    text-decoration: none;
   }
 
   .owl-carousel .owl-item img {
