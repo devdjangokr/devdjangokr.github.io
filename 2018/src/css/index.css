@@ -255,6 +255,7 @@ header a {
   letter-spacing: -0.2px;
   text-align: center;
   color: #0d2e21;
+  word-break: keep-all;
 }
 
 /* section-og */
@@ -387,6 +388,7 @@ footer .copyright {
     height: 36px;
     font-size: 24px;
     letter-spacing: -0.4px;
+    word-break: keep-all;
   }
 
   /* header */
