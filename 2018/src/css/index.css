@@ -243,12 +243,34 @@ header a {
 }
 
 /* section-session */
-.section-session .div-list-wrapper {
+#section-session .div-list-wrapper {
   margin-top: 50px;
 }
 
-/* section-coc */
+/* section-sponsor */
+#section-sponsor .div-list-wrapper {
+  margin-bottom: 100px;
+}
 
+#section-sponsor .div-list-wrapper a {
+  height: auto;
+}
+
+#section-sponsor .div-list-wrapper p {
+  text-align: center;
+}
+
+.img-sponsor {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+}
+
+.keystone {
+  width: 300px;
+}
+
+/* section-coc */
 .div-coc-desc {
   margin-bottom: 50px;
   font-size: 18px;
