@@ -248,6 +248,10 @@ header a {
 
 #section-sponsor .div-list-wrapper a {
   height: auto;
+  color: #0d2e21;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
 }
 
 #section-sponsor .div-list-wrapper p {
